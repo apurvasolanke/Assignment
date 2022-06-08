@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transform property</title>
+	<meta  name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+		div{
+			border: 1px solid red;
+			margin-bottom: 10px;
+			padding: 20px;
+		}
+		/*translate*/
+		 div:first-child:hover{
+		 	background-color: lightcyan;
+		 	transform: translate(10px,10px);
+		 }
+
+          /*scale*/
+		 div:nth-child(2):hover{
+		 	background-color: yellow;
+		 	transform: scale((2.2,1.4));
+		 }
+		 /*skew*/
+		 div:nth-child(3){
+		 	background-color: tomato;
+		 	transform: skew(10deg,5deg);
+		 }
+		 /*rotate*/
+		 div:nth-child(4){
+		 	position: absolute;
+		 	right: 0px;
+		 	width: 20px;
+		 	background-color: yellow;
+
+		 }
+	</style>
+</head>
+<body>
+      <h3> trsanform property-css</h3>
+      <section>
+      	<div>html</div>
+      	<div>css</div>
+      	<div>javascript</div>
+      	<div>react</div>
+      </section>
+</body>
+</html>

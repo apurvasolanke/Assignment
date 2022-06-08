@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>animation property</title>
+	<meta charset="viewport" content="width=device-width,initial-scale=1.0">
+
+	<style type="text/css">
+		
+		div{
+			width: 200px;
+			height: 200px;
+			text-align: center;
+			border-radius: 80%;
+			line-height: 200px;
+			padding: 10px;
+			border-style:double;
+			background-color: lightgoldenrodyellow;
+			animation-name: rolling;
+			animation-delay: 1s;
+			animation-duration: 2s;
+			animation-timing-function: all;
+			animation-iteration-count: 3;		
+
+		}
+		@keyframes rolling{
+			100%{
+				transform: rotate(0deg) scale(1.5);
+				/*transform: scale(1.0);*/
+				transform: skew(40deg);
+
+
+			}
+			100%{
+				transform: rotate(360deg) scale(2.5);
+				/*transform: scale(0.5);*/
+			}
+		}
+
+	</style>
+</head>
+<body>
+   <div>Animtion </div>
+</body>
+</html>
